@@ -15,7 +15,7 @@ scoreBtnGuest.disabled = scoreBtnHome.disabled = true;
 select.addEventListener('change', () => {
     scoreWin = parseInt(select.value);
     scoreBtnGuest.disabled = scoreBtnHome.disabled = false;
-    homeScore.style.color = guestScore.style.color = 'white';
+    homeScore.style.color = guestScore.style.color = 'tomato';
     isGameOver = false;
 });
 
@@ -45,5 +45,6 @@ resetBtn.addEventListener('click', () => {
     select.selectedIndex = 0;
     scoreWin = Infinity
     isGameOver = false;
-    homeScore.style.color = guestScore.style.color = 'white';
+    homeScore.style.color = guestScore.style.color = 'tomato';
+    scoreBtnGuest.disabled = scoreBtnHome.disabled = true;
 });

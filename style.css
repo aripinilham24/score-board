@@ -20,6 +20,14 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .score-board {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
 .home, .guest {
     display: flex;
     flex-direction: column;
@@ -35,4 +43,10 @@ span {
     background-color: black;
     width: 10rem;
     height: 5rem;
+}
+
+.score-display {
+    font-family: "Orbitron", sans-serif;
+    font-size: 4rem;
+    color: tomato;
 }
